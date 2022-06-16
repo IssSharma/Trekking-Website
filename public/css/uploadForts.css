@@ -1,0 +1,167 @@
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    
+    
+}
+.uploadContainer{
+    margin-top: 65px;
+    margin-bottom: 20px;
+    /* border: 2px solid rgb(111, 52, 52) ; */
+    background-color:white ;
+    box-shadow: 0 8px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 29%);
+    border-radius: 10px;
+    padding: 20px;
+    width: 80vw;
+    
+    margin-left: 10%;
+}
+.image-preview{
+    width: 100%;
+    height: 400px;
+    min-height: 100px;
+    border: 2px solid rgb(95, 12, 12);
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image-preview__image{
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position:top;
+}
+#image-container{
+    height: 100%;
+    width: 100%;
+    /* margin-left: 30%; */
+}
+#inpFile{
+    margin: 20px;
+    padding: 30px;
+    border: none;
+}
+
+.image-preview{
+/* display: flex;
+align-items: center;
+justify-content: center; */
+margin: auto;
+}
+
+.otherinfo{
+    display: flex;
+    flex-flow: row wrap;
+    /* align-items: baseline; */
+   align-content: space-around;
+   }
+
+   /* .otherinfo input{
+       max-width: 200px;
+       width: 100%;
+   } */
+.input-conatiner{
+    display: flex;
+    flex-direction: column;
+margin: 1.4rem;
+display: flex;
+width: 100%;
+}
+input,label{
+height: 1.2rem;
+font-size: 1.2rem;
+}
+
+#Title{
+    margin-top: 10px;
+width:95%;
+height: 30px;
+
+}
+
+input,textarea,[type=text] {
+    /* width: 100%; */
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+  }
+  
+  input[type=text]:focus {
+    border: 3px solid #555;
+  }
+ 
+  textarea:focus {
+    border: 3px solid #555;
+  }
+ 
+
+#Description{
+    margin-top: 10px;
+width: 95%;
+font-size: 20px;
+}
+#uploadAriticleContinaer{
+width: 90%;
+height: 100%;
+/* border: 10px solid white;
+border-radius: 10px; */
+margin: auto;
+/* overflow: hidden; */
+}
+.fieldset{
+border: 10px solid rgb(196, 160, 160);
+border-radius: 10px;
+}
+.combine{
+margin: 10px;
+/* width: 100%; */
+display: block;
+}
+#submitbtn{
+
+background-color: rgb(73, 73, 78);
+margin: 10px;
+width: 200px;
+padding: 15px;
+/* margin: auto; */
+color: rgb(255, 252, 250);
+border-radius: 20px;
+font-size: 1.2rem;
+font-weight: bold;
+
+}
+
+.links-container{
+/* display: flex; */
+flex-direction: row;
+display: none;
+
+}
+
+@media screen and (max-width: 816px){
+    body{
+        width: 100%;
+        /* overflow: hidden; */
+    }
+    #uploadAriticleContinaer{
+        width: 100%;
+        overflow: hidden;
+        margin: auto;
+    }
+    .uploadContainer{
+       margin-left: 5%;
+    }
+    #Description,#Title,.image-preview{
+        width: 92%;
+    }
+    }
